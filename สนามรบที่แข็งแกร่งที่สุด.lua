@@ -137,8 +137,8 @@ Window:EditOpenButton({
     Draggable = true,
 })
 Window:Tag({
-    Title = "FREE V.1",
-    Icon = "cache",
+    Title = "VIP",
+    Icon = "crown",
     Color = Color3.fromRGB(168,85,247),
    })
 local TabMain = Window:Tab({ Title = "Main", Icon = "target" })
@@ -477,19 +477,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
-TabMain:Toggle({
-    Title = "No Dash Cooldown ⚡",
-    Desc = "แดชได้ไม่จำกัด",
-    Callback = function(v)
-        NoDash = v
-
-        -- ปิดแล้วคืนค่า
-        if not v then
-            workspace:SetAttribute("NoDashCooldown", false)
-        end
-    end
-})
 -- ================= UI =================
 TabMain:Section({
     Title = "Combat"
