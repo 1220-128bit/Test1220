@@ -483,7 +483,7 @@ TabMain:Section({
 })
 
 TabMain:Toggle({
-    Title = "Auto Block"",
+    Title = "Auto Block",
     Desc = "บล็อคอัตโนมัติ",
     Callback = function(v)
         AutoBlock = v
